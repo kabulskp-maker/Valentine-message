@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(#ffafbd, #ffc3a0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+}
+
+.bear {
+  width: 180px;
+}
+
+h1 {
+  color: #ff4757;
+}
+
+/* Buttons container */
+#buttons {
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Common button style */
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 25px;
+  border: none;
+  background: #ff6b6b;
+  color: white;
+  cursor: pointer;
+}
+
+/* Initial positions (clean layout) */
+#yesBtn,
+#noBtn {
+  position: relative;
+}
+
+/* Slider */
+input[type="range"] {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#sliderText {
+  font-size: 20px;
+  color: #ff4757;
+}
+
+/* Music button */
+#musicBtn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+/* Heartbeat animation */
+.heartbeat {
+  animation: beat 1s infinite;
+}
+
+@keyframes beat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+}
+
+/* Floating kisses */
+.kiss {
+  position: fixed;
+  bottom: -20px;
+  animation: float 6s linear infinite;
+  font-size: 26px;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}
+
+/* Hide sections */
+.hidden {
+  display: none;
+}
+
+/* FINAL SCREEN CURSOR FIX */
+#final {
+  cursor: default;
+  user-select: none;
+}
+
+#final h1 {
+  cursor: default;
+}
+
+/* 🔥 FINAL PAGE CURSOR & SELECTION FIX */
+.final-mode {
+  cursor: default;
+  user-select: none;
+}
+
+.final-mode * {
+  cursor: default !important;
+  user-select: none !important;
+}
+
