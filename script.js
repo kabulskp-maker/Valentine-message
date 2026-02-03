@@ -41,8 +41,8 @@ noBtn.onclick = () => {
     // Bring YES to center
     yesBtn.style.position = "fixed";
     yesBtn.style.left = "50%";
-    yesBtn.style.top = "60%";
-    yesBtn.style.transform = "translateX(-50%) scale(1.2)";
+    yesBtn.style.top = "70%";
+    yesBtn.style.transform = "translateX(-50%) scale(1.15)";
   }
 };
 
